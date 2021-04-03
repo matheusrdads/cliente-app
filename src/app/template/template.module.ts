@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -5,14 +6,15 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
-  declarations: [
+  declarations: [           //importando componentes
     NavbarComponent,
     SidebarComponent
   ],
-  imports: [
-    CommonModule
+  imports: [                //importando outros modulos ou modulos de terceiros
+    CommonModule,
+    RouterModule            //module que permite usar rotas e
   ],
-  exports: [
+  exports: [                //exportando componentes
     NavbarComponent,
     SidebarComponent
   ]
